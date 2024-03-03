@@ -4,33 +4,15 @@ This repository contains the project content for the course CS885-Reinforcement 
 
 ## Prerequisites
 Before you begin, ensure you have the following installed:
-- MATLAB (R2021a or later)
+- MATLAB (R2020a or later)
 - Simulink
 - Control System Toolbox
-- Quanser Hardware Support Package (for real-time implementation)
-- Quanser linear flexible joint [[https://www.quanser.com/products/linear-flexible-joint/](https://www.quanser.com/products/linear-flexible-joint/)]
+- Reinforcement Learning Toolbox
 
-## Lab Content
-The repository is structured as follows:
-- `Lab1/`: Introduction to Simulink for control system design
-  - System identification through step response measurement.
-  - Proportional (P-type) position control.
-  - Closed-loop system identification using Bode plot.
-- `Lab2/`: Controller design and stability analysis:
-  - Proportional-Derivative (PD) controller.
-  - Proportional-Integral-Derivative (PID) controller and stability analysis.
-  - Disturbance and steady-state error analysis.
-- `Lab3/`: Identification and P-control of cascaded systems:
-  - Collocated vs. non-collocated control.
-  - Step response measurement.
-  - Frequency response measurement.
-- `Lab4/`: Frequency domain loop shaping control of cascaded systems
-  - Gain selection
-  - Notch filter design
-  - Lead compensator design
-  - Lag compensator design
-  - Feedforward controller design
-
-Each lab folder contains:
-- `Instructions.pdf`: Detailed lab instructions and theoretical background.
-- `SimulinkModels/`: Pre-built Simulink models for the lab exercises.
+The repository contains:
+- `report.pdf`: Detailed project report and theoretical background.
+- `panda.slx`: Pre-built Simulink model for Franka Emika Panda arm.
+- `main_manipulator.m`: the main code which needs to be run.
+- `Functions/`: Matlab functions that are used in `main_manipulator.m` are stored in this folder.
+- `trajectory/`: Joint trajectories of the robot for the cyclic motion are stored in this folder.
+- `TD3Agent/` and `DDPGAgent/`: saved agents are stored in these folders.
