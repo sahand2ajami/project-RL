@@ -16,3 +16,5 @@ The repository contains:
 - `Functions/`: Matlab functions that are used in `main_manipulator.m` are stored in this folder.
 - `trajectory/`: Joint trajectories of the robot for the cyclic motion are stored in this folder.
 - `TD3Agent/` and `DDPGAgent/`: saved agents are stored in these folders.
+
+**Note:** `main_manipulator.m` uses a function `ver_toolbox.m` which will be published after the publication.
